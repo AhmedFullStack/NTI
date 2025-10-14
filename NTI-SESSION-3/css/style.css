@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=BBH+Sans+Bartle&family=Marhey:wght@300..700&family=Oi&display=swap');
+:root{
+    --firstColor:#00e5ff;
+    --secondrayColor:#f0f0f0;
+
+
+}
+body{
+    background-color: var(--firstColor);
+    color:var(--secondrayColor);
+
+}
+nav{
+    background-color: var(--secondrayColor);
+    color:var(--firstColor);
+
+
+}
+nav ul {
+    display: flex;
+    padding:7px;
+    margin:10px;
+
+}
+nav ul li {
+    list-style: none;
+    text-decoration: none;
+    margin:10px;
+    font-family: "BBH Sans Bartle", sans-serif;
+    text-transform:capitalize;
+    padding: 3px;
+}
+nav ul li:hover {
+
+    /* background-image: url('../imgs/favicon.png'); */
+
+    /* overflow: hidden; */
+ 
+    /* background-size:100% 100%; */
+    /* background-repeat:no-repeat; */
+    /* overflow:hidden; */
+    text-shadow:0px 0px 1px var(--firstColor);
+    /* background-size:cover; */
+
+    border:1px solid var(--firstColor);
+    padding: 3px;
+
+    text-transform: capitalize;
+    text-decoration-color: #f70;
+    text-decoration-style: dashed;
+    font-variant:small-caps;
+
+
+}
+div{
+    padding:3px;
+    min-height: 20rem;
+
+    max-height:20rem;
+    background-color: #f70;
+    overflow: hidden;
+    margin:20px;
+    background-image: url('../imgs/1.jpg');
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position:bottom right;
+    background-attachment:fixed;
+}
+p{
+    color:var(--secondrayColor);
+    text-align:justify;
+    text-align-last:center;
+    line-height:1.2rem;
+    height:15rem;
+    overflow:hidden;
+    word-spacing: 3px;
+    letter-spacing:1.5px;
+    font-size: 0.5rem;
+    font-weight:3px;
+    font-family: "BBH Sans Bartle", sans-serif;
+    text-transform:capitalize;
+    
+}
+.test p{
+    background-color: #bbb;
+    color:#fff;
+    text-transform:capitalize;
+
+
+
+}
+#span1{color:green;
+text-decoration: underline;}
+table{
+
+    
+
+}
+.tr1{
+    background-color:rgb(127, 229, 224);;
+}
+.tr2{
+    background-color: #f70;
+}
