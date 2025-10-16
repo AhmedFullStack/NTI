@@ -1,0 +1,26 @@
+
+*{
+    /* لجعل كل البوردر من الداخل  */
+    box-sizing:border-box;
+    padding:0;
+    margin:0;
+
+
+}
+a{
+    /* لازالة الخط تحت اللينكات  */
+    text-decoration: none;
+
+}
+body{
+
+    background:#f0f0f0;
+
+}
+.table,.table tr,.table td,.table th{
+    border:2px solid #f70;
+    padding:1px;
+}
+.text-blue{
+    color:blue;
+}
