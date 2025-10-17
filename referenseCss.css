@@ -1,0 +1,386 @@
+/*
+  ==========================================================================
+  مرجع شامل لأهم خواص لغة CSS
+  ==========================================================================
+  هذا الملف يحتوي على تجميع لأشهر خواص CSS المستخدمة في تصميم وتنسيق صفحات الويب.
+  كل خاصية مشروحة بتعليق بسيط ومباشر.
+  ==========================================================================
+*/
+
+
+/* ===========================
+   1. خواص الألوان والخلفيات (Colors & Backgrounds)
+   =========================== */
+
+body {
+  /* background-color: لتعيين لون خلفية العنصر */
+  background-color: #f0f0f0;
+
+  /* background-image: لوضع صورة كخلفية للعنصر */
+  background-image: url('path/to/image.jpg');
+
+  /* background-repeat: للتحكم في تكرار صورة الخلفية */
+  /* repeat (افتراضي), repeat-x, repeat-y, no-repeat */
+  background-repeat: no-repeat;
+
+  /* background-position: لتحديد موضع صورة الخلفية */
+  /* center, top, bottom, left, right أو باستخدام قيم (e.g., 50% 50%) */
+  background-position: center center;
+
+  /* background-size: للتحكم في حجم صورة الخلفية */
+  /* auto (افتراضي), cover, contain, أو بأبعاد محددة (e.g., 100px 50px) */
+  background-size: cover;
+
+  /* background-attachment: لتثبيت الخلفية أثناء التمرير أو جعلها تتحرك مع المحتوى */
+  /* scroll (افتراضي), fixed */
+  background-attachment: fixed;
+
+  /* background: خاصية مختصرة لجميع خواص الخلفية بالترتيب */
+  /* color image repeat attachment position */
+  background: #fff url('image.png') no-repeat fixed center;
+}
+
+
+/* ===========================
+   2. خواص النصوص والخطوط (Typography & Text)
+   =========================== */
+
+p {
+  /* color: لتحديد لون النص */
+  color: #333333;
+
+  /* font-family: لتحديد نوع الخط المستخدم */
+  font-family: Arial, "Helvetica Neue", sans-serif;
+
+  /* font-size: لتحديد حجم الخط */
+  font-size: 16px; /* يمكن استخدام px, em, rem, % */
+
+  /* font-weight: لتحديد سماكة الخط (وزنه) */
+  /* normal, bold, bolder, lighter, أو أرقام من 100 إلى 900 */
+  font-weight: normal;
+
+  /* font-style: لتحديد نمط الخط */
+  /* normal, italic, oblique */
+  font-style: italic;
+
+  /* text-align: لمحاذاة النص داخل العنصر */
+  /* left, right, center, justify */
+  text-align: justify;
+
+  /* line-height: لتحديد ارتفاع السطر (المسافة بين السطور) */
+  line-height: 1.6;
+
+  /* text-decoration: لإضافة أو إزالة خطوط للنص */
+  /* none, underline, overline, line-through */
+  text-decoration: none;
+
+  /* text-transform: للتحكم في حالة أحرف النص */
+  /* none, capitalize, uppercase, lowercase */
+  text-transform: capitalize;
+
+  /* letter-spacing: للتحكم في المسافة بين الحروف */
+  letter-spacing: 1px;
+
+  /* word-spacing: للتحكم في المسافة بين الكلمات */
+  word-spacing: 2px;
+
+  /* text-shadow: لإضافة ظل للنص */
+  /* h-shadow v-shadow blur-radius color */
+  text-shadow: 2px 2px 5px grey;
+}
+
+
+/* ===========================
+   3. نموذج الصندوق (Box Model)
+   =========================== */
+
+div {
+  /* width: لتحديد عرض العنصر */
+  width: 300px;
+
+  /* height: لتحديد ارتفاع العنصر */
+  height: 200px;
+
+  /* padding: لإضافة مساحة داخلية (هامش داخلي) بين المحتوى والإطار */
+  /* يمكن تحديد قيمة واحدة لجميع الجهات، أو قيمتين (أعلى/أسفل | يمين/يسار)، أو أربع قيم (أعلى يمين أسفل يسار) */
+  padding: 20px;
+  /* padding-top, padding-right, padding-bottom, padding-left */
+
+  /* margin: لإضافة مساحة خارجية (هامش خارجي) حول العنصر */
+  /* نفس طريقة كتابة الـ padding */
+  margin: 15px;
+  /* margin-top, margin-right, margin-bottom, margin-left */
+
+  /* border: الإطار المحيط بالعنصر */
+  /* border-width border-style border-color */
+  border: 2px solid #000;
+  /* border-width, border-style, border-color لكل جهة على حدة */
+
+  /* border-radius: لعمل حواف دائرية للإطار */
+  border-radius: 10px;
+
+  /* box-sizing: لتحديد كيفية حساب العرض والارتفاع الكلي للعنصر */
+  /* content-box (افتراضي): width + padding + border */
+  /* border-box: width يشمل padding و border */
+  box-sizing: border-box;
+}
+
+
+/* ===========================
+   4. التموضع والتخطيط (Layout & Positioning)
+   =========================== */
+
+.container {
+  /* display: لتحديد كيفية عرض العنصر وسلوكه */
+  /* block, inline, inline-block, flex, grid, none */
+  display: block;
+
+  /* position: لتحديد نوع التموضع للعنصر */
+  /* static (افتراضي), relative, absolute, fixed, sticky */
+  position: relative;
+
+  /* top, right, bottom, left: لتحديد إحداثيات العنصر (تعمل مع التموضع غير static) */
+  top: 10px;
+  left: 20px;
+
+  /* z-index: للتحكم في ترتيب الطبقات (العنصر ذو القيمة الأعلى يظهر في المقدمة) */
+  /* يعمل فقط مع العناصر ذات position غير static */
+  z-index: 10;
+
+  /* float: لجعل العنصر يطفو على اليمين أو اليسار ويسمح للعناصر الأخرى بالالتفاف حوله */
+  /* left, right, none */
+  float: left;
+
+  /* clear: لمنع العناصر من الالتفاف حول عنصر float */
+  /* left, right, both, none */
+  clear: both;
+
+  /* overflow: للتحكم في المحتوى الزائد الذي يخرج عن أبعاد العنصر */
+  /* visible (افتراضي), hidden, scroll, auto */
+  overflow: auto;
+}
+
+
+/* ===========================
+   5. Flexbox - لتنسيق العناصر في بعد واحد (صف أو عمود)
+   =========================== */
+
+.flex-container {
+  display: flex;
+
+  /* flex-direction: لتحديد اتجاه المحور الرئيسي (اتجاه العناصر) */
+  /* row (افتراضي), row-reverse, column, column-reverse */
+  flex-direction: row;
+
+  /* justify-content: لمحاذاة العناصر على المحور الرئيسي */
+  /* flex-start, flex-end, center, space-between, space-around, space-evenly */
+  justify-content: center;
+
+  /* align-items: لمحاذاة العناصر على المحور المتقاطع */
+  /* stretch (افتراضي), flex-start, flex-end, center, baseline */
+  align-items: center;
+
+  /* flex-wrap: للسماح للعناصر بالانتقال إلى سطر جديد إذا لم يكن هناك مساحة كافية */
+  /* nowrap (افتراضي), wrap, wrap-reverse */
+  flex-wrap: wrap;
+
+  /* align-content: لمحاذاة الأسطر المتعددة (يعمل فقط مع flex-wrap: wrap) */
+  /* flex-start, flex-end, center, space-between, space-around, stretch */
+  align-content: space-around;
+}
+
+.flex-item {
+  /* flex-grow: لتحديد مدى إمكانية تمدد العنصر ليملأ المساحة المتاحة */
+  flex-grow: 1;
+
+  /* flex-shrink: لتحديد مدى إمكانية تقلص العنصر عند ضيق المساحة */
+  flex-shrink: 1;
+
+  /* flex-basis: لتحديد الحجم الأولي للعنصر قبل توزيع المساحة المتبقية */
+  flex-basis: auto;
+
+  /* flex: خاصية مختصرة لـ grow, shrink, basis */
+  flex: 1 1 auto;
+
+  /* order: لتغيير ترتيب ظهور العنصر بصرياً */
+  order: 2;
+}
+
+
+/* ===========================
+   6. Grid - لتنسيق العناصر في بعدين (صفوف وأعمدة)
+   =========================== */
+
+.grid-container {
+  display: grid;
+
+  /* grid-template-columns: لتحديد عدد وأحجام الأعمدة */
+  grid-template-columns: auto 1fr 200px; /* 3 أعمدة بأحجام مختلفة */
+
+  /* grid-template-rows: لتحديد عدد وأحجام الصفوف */
+  grid-template-rows: 100px 300px; /* صفين بأحجام مختلفة */
+
+  /* gap (or grid-gap): لتحديد المسافة بين خلايا الشبكة */
+  gap: 10px;
+  /* row-gap, column-gap */
+}
+
+.grid-item {
+  /* grid-column-start / grid-column-end: لتحديد مكان بدء وانتهاء العنصر على الأعمدة */
+  grid-column-start: 1;
+  grid-column-end: 3; /* يمتد العنصر على العمود 1 و 2 */
+
+  /* grid-row-start / grid-row-end: لتحديد مكان بدء وانتهاء العنصر على الصفوف */
+  grid-row-start: 1;
+  grid-row-end: 2;
+
+  /* grid-column / grid-row: خاصية مختصرة */
+  grid-column: 1 / 3;
+  grid-row: 1 / 2;
+}
+
+
+/* ===========================
+   7. الحركات والانتقالات (Transitions & Animations)
+   =========================== */
+
+.button {
+  /* transition-property: لتحديد الخاصية التي سيتم تطبيق الانتقال عليها */
+  transition-property: background-color;
+
+  /* transition-duration: مدة الانتقال */
+  transition-duration: 0.3s;
+
+  /* transition-timing-function: لتحديد سرعة الانتقال خلال مدته */
+  /* ease, linear, ease-in, ease-out, ease-in-out */
+  transition-timing-function: ease-in-out;
+
+  /* transition-delay: تأخير بدء الانتقال */
+  transition-delay: 0.1s;
+
+  /* transition: خاصية مختصرة لجميع خواص الانتقال */
+  transition: all 0.3s ease-in-out 0.1s;
+}
+
+.button:hover {
+  background-color: #ff0000;
+  /* transform: لتطبيق تحويلات ثنائية أو ثلاثية الأبعاد (تحجيم، تدوير، إزاحة) */
+  /* scale(), rotate(), translate(), skew() */
+  transform: scale(1.1);
+}
+
+@keyframes slide-in {
+  /* @keyframes: لتعريف حركة (animation) مخصصة */
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.animated-element {
+  /* animation-name: اسم الحركة التي سيتم تطبيقها */
+  animation-name: slide-in;
+
+  /* animation-duration: مدة دورة الحركة الواحدة */
+  animation-duration: 1s;
+
+  /* animation-iteration-count: عدد مرات تكرار الحركة */
+  /* infinite لتكرار لا نهائي */
+  animation-iteration-count: 1;
+}
+
+
+/* ===========================
+   8. خواص متنوعة (Miscellaneous)
+   =========================== */
+
+a {
+  /* cursor: لتغيير شكل مؤشر الفأرة عند المرور فوق العنصر */
+  /* pointer, default, text, move, not-allowed, etc. */
+  cursor: pointer;
+}
+
+.hidden-element {
+  /* visibility: لإخفاء العنصر مع الحفاظ على مكانه محجوزاً في الصفحة */
+  /* visible, hidden, collapse */
+  visibility: hidden;
+
+  /* opacity: للتحكم في شفافية العنصر (0: شفاف تمامًا, 1: معتم تمامًا) */
+  opacity: 0.5;
+}
+
+/* ::before and ::after: لإنشاء عناصر زائفة (pseudo-elements) قبل أو بعد محتوى العنصر */
+.element::before {
+  content: "» "; /* يجب وجود خاصية content دائمًا */
+  color: blue;
+}
+
+/* لتنسيق الجزء من النص الذي يقوم المستخدم بتحديده (highlight). */
+::selection { background: #ffc107; color: black; }
+
+/* ::placeholder: لتنسيق النص المؤقت الذي يظهر في حقول الإدخال (<input>). */
+input::placeholder { color: #aaa; }
+
+/* :is() و :where(): لتبسيط كتابة المحددات الطويلة والمتكررة. الفرق الرئيسي أن :where() ليس لها خصوصية (specificity). */
+:is(header, main, footer) p { color: blue; }
+
+/* :not(): لتحديد كل العناصر ما عدا العنصر المحدد بداخلها */
+p:not(.special) { color: grey; }
+
+/* مثال: div { display: grid; place-items: center; } تقوم بتوسيط العنصر أفقيًا ورأسيًا. */
+div { display: grid; place-items: center; }
+
+/* الأنماط الأساسية (للشاشات الصغيرة أولاً - Mobile First) */
+.container {
+    width: 100%;
+  }
+  
+  /* الأنماط للشاشات الأكبر من 768px (مثل التابلت) */
+  @media (min-width: 768px) {
+    .container {
+      width: 750px;
+      margin: 0 auto;
+    }
+  }
+  
+  /* الأنماط للشاشات الأكبر من 1200px (مثل الكمبيوتر) */
+  @media (min-width: 1200px) {
+    .container {
+      width: 1170px;
+    }
+  }
+
+  /* المحددات المترابطة (Combinators):
+
+A B (Descendant): يحدد أي عنصر B موجود داخل A.
+
+A > B (Child): يحدد فقط العنصر B الذي هو ابن مباشر لـ A.
+
+A + B (Adjacent Sibling): يحدد العنصر B الذي يأتي مباشرة بعد العنصر A وعلى نفس المستوى.
+
+A ~ B (General Sibling): يحدد كل العناصر B التي تأتي بعد A وعلى نفس المستوى. */
+
+/* تحديد كل حقول الإدخال من نوع نص */
+input[type="text"] {
+    border: 1px solid blue;
+  }
+  
+  /* تحديد كل الروابط التي تحتوي على "google.com" في مسارها */
+  a[href*="google.com"] {
+    color: green;
+  }
+
+  /* كتابة متداخلة (Nesting) */
+nav {
+    ul {
+      list-style: none;
+    }
+  
+    li > a {
+      text-decoration: none;
+    }
+  }
