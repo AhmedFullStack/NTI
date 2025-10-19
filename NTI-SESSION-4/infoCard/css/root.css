@@ -4,15 +4,22 @@
     text-decoration: none;
 }
 :root{
-    --Acolor: #3A9F72;
+    /* --Acolor: #3A9F72;
     --Bcolor:#68D66F;
     --Ccolor:#F5F7F6;
-    --Dcolor:#171F2D; 
+    --Dcolor:#171F2D;  */
 
     /* --Acolor: #68D66F;
     --Bcolor:#3A9F72;
     --Ccolor:#F5F7F6;
     --Dcolor:#171F2D; */
+
+    --Acolor: #092D09;
+    --Bcolor:#3A9F72;
+    --Ccolor:#F5F7F6;
+    --Dcolor:#171F2D; */
+
+    
     ::selection { background: var(--Ccolor); color: var(--Bcolor); }
 }
 .button {
