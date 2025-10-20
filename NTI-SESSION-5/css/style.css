@@ -1,5 +1,6 @@
 *{ margin:0;padding:0px; box-sizing: border-box;}
 .d-inline-block{display:inline-block; vertical-align:auto;}
+.block{display:block;}
 .container{width:90%; margin:0 auto;}
 .container-fluid{width:100%; overflow:hidden;}
 .w-50{width:49%;}
@@ -15,7 +16,11 @@
 .lh-med{line-height:1.5;}
 .l-s-med{letter-spacing: 1.5px;}
 .mr-2{margin:2% 0;}
+.h-10{height:10rem;vertical-align:top;}
+.fl{float:left;}
+.br-20{border-radius:20px;}
 ul{list-style-type:none;}
+ul li{list-style-type:none;}
 header{
      background-image: url('../images/hero.png');background-size: 100% 100%;
      
@@ -27,6 +32,16 @@ nav ul{ list-style-type:none;height:3rem;}
 a{text-decoration: none;color:black;}
 section{
     margin:2% 0;
+}
+a:hover{
+    color:#b88e2b;
+    border-collapse: collapse;
+    letter-spacing:0.1rem;
+}
+button:hover{
+    color:#b88e2b;
+    border-collapse: collapse;
+    letter-spacing:0.1rem;
 }
 .card {
     width: 30%;
