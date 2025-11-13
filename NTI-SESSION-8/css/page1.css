@@ -1,0 +1,41 @@
+.container{
+    background-color: bisque;
+    height: 500vh;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    position: relative;
+
+}
+.AHMED{
+    width: 100%;
+    font-size: 10rem;
+    align-content: center;
+    justify-content: center;
+    display: flex;
+}
+input{
+    width: 50%;
+    background-color: aqua;
+    height: 50px;
+}
+input:focus{
+    outline: 3px #f000f0;
+    outline-offset: 9px;
+    outline-style: dotted;
+    shape-outside: margin-box;
+    border-radius: 10px;
+}
+nav{
+    position: fixed;
+    background: #fff;
+    width: 100%;
+    ul{list-style-type: none;
+    display: flex;
+     li{
+        float: right;
+        width: 20%;
+     }
+        }
+
+}

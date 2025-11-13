@@ -1,0 +1,92 @@
+body{
+    padding: 0;
+    margin:0;
+    background-color: #bbb;
+}
+.container{
+    display: flex;
+    column-count: 4;
+    grid-area:2px;
+    align-items: center;
+    align-items: center;
+    justify-content: center;
+    height: 70rem;
+   
+  
+
+}
+.img-photo{
+    height: 350px;
+    box-sizing: border-box;
+    background: #fff;
+    vertical-align: middle;
+    aspect-ratio: 2/1;
+    gap: 2px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    
+    
+    transition-duration: 2s;
+}
+.img-photo:hover{transform:scale(1.5,1.5);border-radius: 25px;}
+.img-photo img{
+    max-height: 100%;
+    transition-duration: 2s;
+    /* transition-delay: 3s; */
+    
+
+}
+.img-photo:hover img{
+    margin-top: 4%;
+    max-height: 50%;
+    border-radius: 25px;
+    background-color: #f70;
+    transition-duration: 2s;
+    transform: rotate(360deg) skew(25deg);
+   
+
+}
+.talent{
+    background-color: #fff;
+padding: 30px;
+width: 50%;
+text-align:center;
+position: relative;
+height: 30vh;
+background-image: url("../images/—Pngtree—3d\ bot\ ai\ powered\ marketing_12994874.png");
+background-size: cover;
+max-height: 100%;
+}
+.talent span{text-align:center;}
+.talent .T{
+    position:absolute;
+    transition: all 10s;
+     transform: rotateX(5px); top:5%; right: 20%; bottom: 70%;
+    }
+.talent .A{
+    position:absolute;
+    transition: all 10s;
+     transform: rotateX(5px); top:4%; right: 7%; bottom: 60%;
+    }
+.talent .L{
+    position:absolute;
+    transition: all 10s;
+     transform: rotateX(5px); top:12%; right: 9%; bottom: 50%;
+    }
+.talent .E{
+    position:absolute;
+    transition: all 10s;
+     transform: rotateX(5px); top:60%; right: 10%; bottom: 40%;
+    }
+.talent .N{
+    position:absolute;
+    transition: all 10s;
+     transform: rotateX(5px); top:13%; right: 30%; bottom: 20%;
+    }
+    .talent:hover span{
+        position:absolute;
+        transition: all 10s;
+         transform: rotateX(0px); top:0%; right: 0%; bottom: 0%; 
+    }
